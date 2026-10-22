@@ -26,7 +26,7 @@ export const SpaSection = () => {
             alt="静かな水面に浮かぶ一艘の舟"
             width="800"
             height="1100"
-            className="h-full object-cover motion-reduce:!transform-none"
+            className="h-full object-cover motion-reduce:transform-none!"
             loading="lazy"
           />
         </Reveal>

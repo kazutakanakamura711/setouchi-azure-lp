@@ -13,7 +13,7 @@ export const DiningSection = () => {
           alt="瀬戸内の魚介と旬菜を使った会席料理"
           width="900"
           height="1100"
-          className="h-full object-cover motion-reduce:!transform-none"
+          className="h-full object-cover motion-reduce:transform-none!"
           loading="lazy"
         />
       </Reveal>

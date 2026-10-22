@@ -109,7 +109,7 @@ export const Header = ({ menuOpen, onMenuOpenChange }: HeaderProps) => {
       <button
         ref={menuButtonRef}
         data-testid="menu-toggle"
-        className={`relative z-10 hidden min-h-[46px] min-w-[52px] place-items-center border-0 bg-transparent p-0 text-[0.58rem] tracking-[0.16em] tablet:grid ${
+        className={`relative z-10 hidden min-h-[46px] min-w-[52px] cursor-pointer place-items-center border-0 bg-transparent p-0 text-[0.58rem] tracking-[0.16em] tablet:grid ${
           scrolled || menuOpen ? "text-ink" : "text-ivory"
         }`}
         type="button"

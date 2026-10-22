@@ -23,12 +23,22 @@ Figma Makeをもとに実装した、瀬戸内の架空ラグジュアリーリ�
 
 ## Quick start
 
+Node.jsは`.nvmrc`に指定した`24.22.1`を使用します。`nvm`を導入済みの場合は、次の手順でセットアップします。
+
 ```bash
-npm install
+nvm install
+nvm use
+npm ci
 npm run dev
 npm run validate
 npm run test:e2e
 ```
+
+Tailwind CSS 4は`@tailwindcss/vite`経由でビルドします。テーマ、ブレークポイント、アニメーションは[`src/styles/theme.css`](./src/styles/theme.css)で管理します。
+
+Node.jsを更新する場合は`.nvmrc`と`package.json`の`engines.node`を更新し、`npm ci`、`npm audit`、`npm run validate`、`npm run test:e2e`を実行してください。
+
+Vercelでは既存のNode.js `24.x`設定を使用します。マイナー・パッチ更新はVercelが管理し、ローカル用の`.nvmrc`とは別に扱います。詳細は[VercelのNode.jsバージョン管理](https://vercel.com/docs/functions/runtimes/node-js/node-js-versions)を参照してください。
 
 ## Git hooks
 

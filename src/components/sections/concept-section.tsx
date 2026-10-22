@@ -39,7 +39,7 @@ export const ConceptSection = () => {
           alt="島々が浮かぶ静かな瀬戸内海"
           width="900"
           height="1200"
-          className="h-full object-cover motion-reduce:!transform-none"
+          className="h-full object-cover motion-reduce:transform-none!"
           loading="lazy"
         />
       </Reveal>

@@ -22,7 +22,7 @@ export const LocationSection = () => {
           alt="木々と海に沿って続く瀬戸内の散歩道"
           width="1000"
           height="750"
-          className="h-full object-cover motion-reduce:!transform-none"
+          className="h-full object-cover motion-reduce:transform-none!"
           loading="lazy"
         />
       </Reveal>
