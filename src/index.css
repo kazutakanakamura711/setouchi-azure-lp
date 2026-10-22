@@ -1,6 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss" source(none);
+@import "./styles/theme.css";
+
+@source "./";
+@source "../index.html";
 
 :root {
   color: #242a31;

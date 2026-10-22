@@ -1,0 +1,54 @@
+@theme {
+  --breakpoint-*: initial;
+
+  --color-ivory: #f8f5ef;
+  --color-warm-white: #eee9df;
+  --color-navy: #1a2744;
+  --color-gold: #b8986a;
+  --color-charcoal: #2c2c2c;
+  --color-ink: #242a31;
+
+  --font-serif:
+    "Playfair Display", "Yu Mincho", "Hiragino Mincho ProN", Georgia, serif;
+  --font-sans:
+    "Work Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+
+  --animate-hero-zoom: hero-zoom 14s ease-out both;
+  --animate-hero-copy: hero-copy 1.4s 0.2s ease both;
+  --animate-scroll-line: scroll-line 2.2s ease-in-out infinite;
+
+  @keyframes hero-zoom {
+    from {
+      transform: scale(1.08);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes hero-copy {
+    from {
+      opacity: 0;
+      transform: translateY(18px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scroll-line {
+    0% {
+      transform: translateY(-120%);
+    }
+    55%,
+    100% {
+      transform: translateY(220%);
+    }
+  }
+}
+
+@custom-variant mobile (@media (max-width: 680px));
+@custom-variant tablet (@media (max-width: 980px));
+@custom-variant tabletUp (@media (min-width: 681px));
+@custom-variant desktop (@media (min-width: 981px));
